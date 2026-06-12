@@ -1,0 +1,312 @@
+#navbar {
+     background-color: rgba(22, 21, 26, 0.932);
+     color:white;
+}
+
+.name{
+    color: whitesmoke;
+}
+
+body{
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.n_items{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+a{
+        text-decoration: none;
+        color:white;
+}
+
+a:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+button:hover{
+    color: white;
+    background-color: midnightblue;
+}
+
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+/*Home/About*/
+#home {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+span {
+    color: red;
+}
+
+.left-div {
+    height: 70%;
+    width: 40%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    display: flex;
+    padding: 2rem 0;
+}
+
+#contact-button {
+    background-color: white;
+    color: black;
+}
+
+#contact-button:active {
+    background-color: red;
+}
+.right-div {
+    background-color: rgb(236, 236, 236);
+    border: 2px solid white;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pic {
+    height: 50%;
+    width: 50%;
+}
+#socils {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#socils img {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+#socils img:active{
+    background-color: midnightblue;
+} 
+
+/*Service*/
+#service { 
+    background-color: black; 
+    color: white; 
+    height: 100vh; 
+    justify-content: center; 
+    align-items: center;
+    gap: 20rem; 
+}
+
+#service h1{ 
+    text-align:center; 
+    margin-bottom:40px; 
+}
+
+.service-container{ 
+    display: grid; 
+    grid-template-columns:300px 300px; 
+    gap: 50px ; 
+    justify-content: center; 
+} 
+
+.T-left, 
+.T-right, 
+.B-left, 
+.B-right{ 
+    width: 300px; 
+    height: 200px; 
+    border: 2px solid white; 
+    border-radius: 15px; 
+    background-color: rgba(22, 21, 26, 0.932); 
+    
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 15px; 
+} 
+
+.T-left img, 
+.T-right img, 
+.B-left img, 
+.B-right img{ 
+     
+    width: 40px; 
+    height: 40px; 
+} 
+
+/*Contact*/
+
+#contact {
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+form {
+    border: 2px solid white;
+    width: 33rem;
+    height:38rem;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form div {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form button{
+    transition: 2s;
+}
+
+form button:hover{
+    transform: scale(1.2);
+    background-color: midnightblue;
+    color: white;
+}
+
+input,textarea {
+    padding: 2%;
+    height: 30px;
+    width: 350px;
+    border-radius: 0.5rem;
+    resize: none;
+    
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid brown;
+}
+
+@media(max-width: 1040px) {
+
+        nav {
+        padding: 15px;
+    }
+
+    .n_items {
+        gap: 1.5rem;
+    }
+
+    .name h1 {
+        font-size: 1.8rem;
+    }
+
+}
+@media(max-width: 700px) {
+
+    nav {
+        
+        width: 100%;
+        padding: 5px;
+        gap: 15px;
+    }
+
+    .name h1 {
+        font-size: 1.5rem;
+    }
+
+    .n_items {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .n_items li {
+        font-size: 0.9rem;
+    }
+
+    nav button {
+        display: none;
+    }
+
+     #home {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .left-div {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .left-div a {
+        padding-top: 2rem;
+    }
+
+    .right-div {
+        width: 250px;
+        height: 250px;
+    }
+
+    #service {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    #contact {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    form {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+}
+
