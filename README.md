@@ -1,6 +1,3 @@
-# Portfolio
-my personal portfolio
-
 # Personal Portfolio Website
 
 ## About the Project
